@@ -6,7 +6,8 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 
 img {
     width: 100%; /*Please leave this line.*/
-     display: block;
+    display: block;
+    grid-column: 1/5;
 }
 
 h1 {
@@ -30,11 +31,13 @@ h2 {
 }
 
 figcaption{ 
-        margin: 1em;
+        margin: 1em 1.5em;
         font-family: 'poppins', san-serif;
         font-weight: 150;
         font-style: italic;
         font-size:1em;
+        grid-column: 5/6;
+
 }  
 
 h3 {
@@ -45,7 +48,12 @@ h3 {
     color: rgb(255, 140, 8);
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    padding:1em 0.5em 0em 1.2em
+    padding:1em 0.5em 0em 1.2em;
+    border-top: 2px solid rgb(255, 136, 0);
+    margin-left: 0.3em;
+    margin-right: 2em;
+    padding-top: 1em;
+
 }
 
 ul {
@@ -54,7 +62,7 @@ ul {
     font-weight: 150;
     font-style: normal;
     font-size:1em;
-    padding: 0em 0.5em 1em 
+    padding: 0em 0.5em 1em; 
 }
 
 li {
@@ -68,7 +76,7 @@ ol {
     font-weight: 150;
     font-style: normal;
     font-size:1em;
-    padding: 0em 0.5em 1em 
+    padding: 0em 0.5em 1em;
 }
 
 footer {
@@ -77,5 +85,31 @@ footer {
     font-family: 'poppins', san-serif;
     padding:1em 0.5em 1em;
 }
+
+main { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: top 3em;
+    grid-column-gap: 3em;
+
+}
+
+body {
+    background-color: rgb(227, 227, 227);
+}
+
+figure {
+    display: grid;
+    grid-template-columns: repeat(5, 1 fr);
+    margin-bottom: 3em;
+}
+
+div.container {
+    max-width: 50em;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+
 
 /*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
