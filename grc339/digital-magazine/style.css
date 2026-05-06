@@ -100,13 +100,13 @@ aside{
 }
 
 aside section.secondary-story h2{
-    color: rgb(835 35, 35);
+    color: rgb(0, 0, 0);
     font-size: 1em;   
     margin: 1em 0.5 0.5em 0.5em;
 }
 
 section.secondary-story a p{
-    color: rgb(835 35, 35);
+    color: rgb (0, 0, 0);
     font-size: 1em;   
     padding: 0.2em 0em 0em 0em;
 }
