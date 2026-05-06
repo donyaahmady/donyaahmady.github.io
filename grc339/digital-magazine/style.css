@@ -7,29 +7,60 @@ img {
     display: block;
 }
 
-div.container{
-    max-width: 50em;
-    margin:auto;
-}
-
-
-body{
+div.container,div.home-container{
     max-width: 50em;
     margin:auto;
 }
 
 h1{ 
-    width: 8em;
-    margin:1em 0.5em 2em 0.5em;
+    max-width: 8em;
+    margin: 1em 1em 1em 0em;
 }
 
-nav ul {
-    margin: 0.5em 0.5em 1.5em;
+
+h2{
+    color:rgb(84, 122, 159);
+    font-weight:bolder;  
+    font-family: serif;
+}
+.tertiary-story h2{
+    font-size: 1.2em;   
+    border-top:1.5px solid rgb(84, 122, 159);
+    padding: 0.2em 0em 0em 0em;
 }
 
-nav li{
-    padding: 0.2em;
+article h2{
+    font-size: 3em;   
+    padding: 0.2em 0em 0em 0em;
+}
+.main-story h2{
+    font-size: 3em;   
+    padding: 0.2em 0em 0em 0em;
+}
+
+.secondary-story h2{
+    font-size: 2.2em;   
+    padding: 0.2em 0em 0em 0em;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family:  sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 0.2em 0.5em 2em 0em;
+    line-height: 1.3em;
+}
+
+nav {
+    margin: 0.5em 0.5em 0.5em 0em;
+}
+
+nav ul li{
     list-style-type: none;
+    padding: 0em 1em 0.5em 0em;
 }
 
 nav ul li a {
@@ -37,145 +68,161 @@ nav ul li a {
     font-family: sans-serif;
     color: rgb(84, 122, 159);
     font-weight: bold;
-    font-size: 1.5em;
-}
-
-.main-story a, .secondary-story a, .tertiary-story a{
-     text-decoration: none; 
-}
-
-section.main-story h2{
-    font-family: serif;
-    color: rgb(84, 122, 159);
-    font-weight: bolder;
-    font-size: 3em;   
-    padding: 0.2em 0em 0em 0.2em;
-}
-
-section.main-story p{
-    font-family:  sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 1.3em;
-    margin: 0.2em 0.5em 2em 0.5em;
-    line-height: 1.5em;
-}
-
-.secondary-story h2{
-    font-family: serif;
-    color: rgb(84, 122, 159);
-    font-weight: bolder;
-    font-size: 2.2em;   
-    padding: 0.2em 0em 0em 0.3em;
-
-}
-
-.secondary-story p{
-    font-family:  sans-serif;
-    color: rgb(0, 0, 0);
     font-size: 1.2em;
-    margin: 0.2em 0.5em 2em 0.5em;
-    line-height: 1.3em;
-}
-
-.tertiary-story h2{
-    font-family: serif;
-    color: rgb(84, 122, 159);
-    font-weight: bolder;
-    font-size: 1.5em;   
-    border-top:1.5px solid rgb(84, 122, 159);
-    padding: 0.2em 0em 0em 0.3em;
-
-}
-
-.tertiary-story p{
-    font-family: sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 1em;
-    margin: 0.2em 0.5em 1em 0.5em;
-    line-height: 1.3em;
-}
-
-.tertiary-story {
-    width: 30em;
-    padding: 0.5em;
 }
 
 figcaption{
     font-style:italic;
     font-size:1.2em;
     font-family: sans-serif;
-    padding: 0.4em;
-    margin-bottom: 1em;
+    margin: 0.5em 0em 1em 0em;
+    color: rgb(90, 90, 90);
 }
 
-footer {
-    background-color: rgb(84, 122, 159);
-    height: 4em;
+
+p{
+    font-family:  sans-serif;
+    margin:0 0.5 1,5em;
+    line-height: 1.5em;
 }
 
-footer p{
-    padding: 1em;
-    color: rgb(255,255,255);
-    font-size: 1.3em;
-    font-family: sans-serif;
-}
-
-article h2{
-    font-family: serif;
-    color: rgb(84, 122, 159);
-    font-weight: bolder;
-    font-size: 3em;   
-    padding: 0.2em 0em 0em 0.2em;
-}
-
-article p{
+.secondary-story p{
     font-family:  sans-serif;
     color: rgb(0, 0, 0);
-    font-size: 1.3em;
-    padding: 0.3em 0.5em 2em 0.5em;
-    line-height: 1.5em;
+    font-size: 1em;
+    margin: 0.2em 0.5em 2em 0em;
+    line-height: 1.3em;
 }
 
 aside{
     background-color: rgb(200, 200, 250);
-    text-decoration: none;
-    padding-bottom: 0.5em;
-}
-
-aside figure{
     padding: 0.5em;
 }
 
-aside section.secondary-story a h2{
-    font-family: serif;
-    color: rgb(84, 122, 159);
-    font-weight: bolder;
-    font-size: 1.2em;   
-    padding: 0.2em 0em 0em 0.5em;
+aside section.secondary-story h2{
+    color: rgb(835 35, 35);
+    font-size: 1em;   
+    margin: 1em 0.5 0.5em 0.5em;
 }
 
-aside section.secondary-story a p{
-    font-family: sans-serif;
+section.secondary-story a p{
     color: rgb(835 35, 35);
     font-size: 1em;   
     padding: 0.2em 0em 0em 0em;
 }
 
-@media screen and (min-width:40em) {
+footer {
+    background-color: rgb(84, 122, 159);
+    padding:1em;
+    box-sizing: border-box;
+}
+
+footer p{
+    padding: 0.5 0em;
+    color: rgb(255,255,255);
+}
+
+
+@media only screen and (min-width: 60em){
+
     nav ul li{
         display: inline;
-        font-size:0.7em;
-        padding: 1em 1em 1em 0em;
         margin-left: 0em;
     }
-    .tertiary-story {
-        width: 50em;
-    }
-    .tertiary-story h2{
-        padding-top:0.7em;
-    }
-    .tertiary-story p{
-        padding-left:0em;
+
+    div.home-container{
+        max-width: 80em;
+        padding:0 1em;
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
     }
 
+    div.container{
+        max-width:60em;
+        padding:0 1em;
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    header, footer{
+        grid-column: 1/3;
+    }
+    
+    div.home-container main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:1em
+    }
+
+    div.home-container aside{
+        background: none;
+        padding:0;
+        margin-top:0;
+    }
+
+    div.container aside {
+        margin-top: 0;
+    }
+
+    section.main-story{
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display:flex;
+    }
+
+    section.main-story a{
+        flex: 1 0 12em;
+        display:flex;
+        flex-direction: column;   
+
+    }
+
+    section.main-story a figure{
+        flex: 1 0 12em;
+        display:flex;
+
+    }
+
+    section.main-story a figure img{
+        object-fit:cover;
+    }
+
+    section.secondary-story a h2{
+        flex: 0 0 1em;
+    }
+
+    section.main-story a p{
+        flex: 0 0 4em;
+    }
+
+    section.secondary-story{
+        display:flex;
+        
+    }
+
+    section.secondary-story a{
+        flex: 1 0 12em;
+        display:flex;
+        flex-direction: column;   
+    }
+
+    section.secondary-story a figure{
+        flex: 1 0 12em;
+        display:flex;
+    }
+
+    section.secondary-story a figure img{
+        object-fit:cover;
+    }
+
+    section.secondary-story a h2{
+        flex: 0 0 1em;
+    }
+
+    section.secondary-story a p{
+        flex: 0 0 4em;
+    }
 }
+
