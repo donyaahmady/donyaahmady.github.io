@@ -1,301 +1,400 @@
 /*CSS document*/
-
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
-
 img {
+width: 100%;
+display: block;
+}
+div.container,div.home-container{
+max-width: 50em;
+margin:auto;
+background-color: rgb(245, 239, 228);
+padding: 2em;
+}
+h1{ 
+max-width: 20em;
+margin: 1em 1em 1em 0em;
+}
+h2{
+color:rgb(196, 56, 27);
+font-weight:bolder;  
+font-family: "termina", serif;
+}
+.tertiary-story h2{
+font-size: 1em;   
+border-top:1.5px solid rgb(196, 56, 27);
+padding: 0.2em 0em 0em 0em;
+}
+article h2{
+font-size: 2em;   
+padding: 0.2em 0em 0em 0em;
+}
+.main-story h2{
+font-size: 2em;   
+padding: 0.2em 0em 0em 0em;
+}
+.secondary-story h2{
+font-size: 1.3em;   
+padding: 0.2em 0em 0em 0em;
+}
+a{
+text-decoration: none;
+}
+p{
+font-family:  "garamond-premier-pro", serif;
+color: rgb(0, 0, 0);
+margin: 0.2em 0.5em 1em 0em;
+line-height: 1.5em;
+}
+.tertiary-story p{
+font-size: 1.1em;
+}
+.main-story p{
+font-size: 1.5em;
+}
+nav {
+margin: 0.5em 0.5em 0.5em 0em;
+}
+nav ul li{
+list-style-type: none;
+padding: 0em 1em 0.5em 0em;
+}
+nav ul li a {
+text-decoration: none;
+font-family: "termina", serif;
+color: rgb(75, 124, 112);
+font-weight: bold;
+font-size: 1.2em;
+}
+figcaption{
+font-style:italic;
+font-size:1.2em;
+font-family:  "garamond-premier-pro", serif;
+margin: 0.5em 0em 1em 0em;
+color: rgb(90, 90, 90);
+}
+.secondary-story p{
+font-family:  "garamond-premier", serif;
+color: rgb(245, 239, 228);
+margin: 0.2em 0.5em 2em 0em;
+line-height: 1.3em;
+}
+aside{
+background-color: rgba(75, 124, 112, 0.5);
+padding: 0.5em;
+}
+aside section.secondary-story h2{
+color:rgb(140, 26, 26);
+font-size: 1.2em;   
+margin: 1em 0.5 0.5em 0.5em;
+}
+section.secondary-story a p{
+color: rgb(31, 31, 30);
+font-size: 1em;   
+padding: 0.2em 0em 0em 0em;
+}
+footer {
+background-color: rgb(75, 124, 112);
+padding:1em;
+box-sizing: border-box;
+}
+footer p{
+padding: 0.5em;
+color: rgb(255,255,255);
+}
+article p{
+font-size: 1.2em;
+}
+main {
+display: flex;
+flex-direction: column;
+gap: 1.6rem;
+margin-bottom: 2rem;
+}
+main h2 {
+color: rgb(196, 56, 27);
+font-size: 2.4rem;
+}
+main form {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 0.9rem;
+border-top: 1.5px solid rgb(196, 56, 27);
+padding-top: 1.25rem;
+}
+main ul {
+list-style: none;
+padding: 1em 0 2em 0em;
+}
+main h3{
+font-size: 1.5em;
+color: rgb(196, 56, 27);
+font-family: "termina", serif;
+font-weight: 700;
+}
+main label {
+color: rgb(75, 124, 112);
+font-family: "termina", serif;
+font-size: 1rem;
+font-weight: 700;
+}
+main input[type="text"],
+main input[type="email"] {
+border: 1.5px solid rgb(196, 56, 27);
+background: white;
+padding: 0.6rem;
+}
+main input[type="checkbox"] {
+accent-color: rgb(196, 56, 27);
+width: 1.1em;
+height: 1.1em;
+}
+main button {
+align-self: flex-start;
+border: 0;
+background: rgb(196, 56, 27);
+color: rgb(245, 239, 228);
+cursor: pointer;
+font-family: "termina", serif;
+font-weight: 800;
+min-height: 2.75rem
+}
+.gallery-heading p{
+font-size: 1.5em;
+}
+
+div.photogallery {
+    max-width: 60em;
+    margin: 0;
+    padding: 1em;
+}
+
+div.photogallery main {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(66% + 4em);
+}
+
+div.photogallery figure {
+    margin: 0;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+
+div.photogallery figure img {
     width: 100%;
+    height: 90%;
+    object-fit: cover;
     display: block;
 }
 
-div.container,div.home-container{
-    max-width: 50em;
-    margin:auto;
-    background-color: rgb(245, 239, 228);
-    padding: 2em;
-}
-
-h1{ 
-    max-width: 20em;
-    margin: 1em 1em 1em 0em;
-}
-
-h2{
-    color:rgb(196, 56, 27);
-    font-weight:bolder;  
-    font-family: "termina", serif;
-}
-
-.tertiary-story h2{
-    font-size: 1em;   
-    border-top:1.5px solid rgb(196, 56, 27);
-    padding: 0.2em 0em 0em 0em;
-}
-
-article h2{
-    font-size: 2em;   
-    padding: 0.2em 0em 0em 0em;
-}
-.main-story h2{
-    font-size: 2em;   
-    padding: 0.2em 0em 0em 0em;
-}
-
-.secondary-story h2{
-    font-size: 1.3em;   
-    padding: 0.2em 0em 0em 0em;
-}
-
-a{
-    text-decoration: none;
-}
-
-p{
-    font-family:  "garamond-premier-pro", serif;
-    color: rgb(0, 0, 0);
-    margin: 0.2em 0.5em 1em 0em;
-    line-height: 1.5em;
-}
-
-.tertiary-story p{
-    font-size: 1.1em;
-}
-.main-story p{
-    font-size: 1.5em;
-
-}
-nav {
-    margin: 0.5em 0.5em 0.5em 0em;
-}
-
-nav ul li{
-    list-style-type: none;
-    padding: 0em 1em 0.5em 0em;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-family: "termina", serif;
-    color: rgb(75, 124, 112);
+div.photogallery figcaption {
+    font-size: 1.2em;
     font-weight: bold;
-    font-size: 1.2em;
-}
-
-figcaption{
-    font-style:italic;
-    font-size:1.2em;
-    font-family:  "garamond-premier-pro", serif;
-    margin: 0.5em 0em 1em 0em;
+    margin: 1em 0;
     color: rgb(90, 90, 90);
-}
-
-.secondary-story p{
-    font-family:  "garamond-premier", serif;
-    color: rgb(245, 239, 228);
-    margin: 0.2em 0.5em 2em 0em;
-    line-height: 1.3em;
-}
-
-aside{
-    background-color: rgba(75, 124, 112, 0.5);
-    padding: 0.5em;
-}
-
-aside section.secondary-story h2{
-    color:rgb(140, 26, 26);
-    font-size: 1.2em;   
-    margin: 1em 0.5 0.5em 0.5em;
-}
-
-section.secondary-story a p{
-    color: rgb(31, 31, 30);
-    font-size: 1em;   
-    padding: 0.2em 0em 0em 0em;
-}
-
-footer {
-    background-color: rgb(75, 124, 112);
-    padding:1em;
-    box-sizing: border-box;
-}
-
-footer p{
-    padding: 0.5em;
-    color: rgb(255,255,255);
-}
-
-article p{
     font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.5em 0em 1em 0em;
+    margin: 0;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    margin-bottom: 2rem;
+div.photogallery input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+div.photogallery input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+div.photogallery input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+div.photogallery input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+div.photogallery input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+div.photogallery input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+div.photogallery input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+div.photogallery input:nth-of-type(8):checked ~ main figure:nth-of-type(8) {
+    opacity: 1;
 }
 
-main h2 {
-    color: rgb(196, 56, 27);
-    font-size: 2.4rem;
+div.photogallery nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.2em;
+    margin-top: 1em;
 }
 
-main form {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.9rem;
-    border-top: 1.5px solid rgb(196, 56, 27);
-    padding-top: 1.25rem;
-}
-
-main ul {
-    list-style: none;
-    padding: 1em 0 2em 0em;
-}
-
-main h3{
-    font-size: 1.5em;
-    color: rgb(196, 56, 27);
-    font-family: "termina", serif;
-    font-weight: 700;
-}
-
-main label {
-    color: rgb(75, 124, 112);
-    font-family: "termina", serif;
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-main input[type="text"],
-main input[type="email"] {
-    border: 1.5px solid rgb(196, 56, 27);
-    background: white;
-    padding: 0.6rem;
-}
-
-main input[type="checkbox"] {
-    accent-color: rgb(196, 56, 27);
-    width: 1.1em;
-    height: 1.1em;
-}
-
-main button {
-    align-self: flex-start;
-    border: 0;
-    background: rgb(196, 56, 27);
-    color: rgb(245, 239, 228);
+div.photogallery nav label {
+    display: block;
     cursor: pointer;
-    font-family: "termina", serif;
-    font-weight: 800;
-    min-height: 2.75rem
+    overflow: hidden;
+    border: 2px solid transparent;
 }
-    
-.gallery-heading p{
-    font-size: 1.5em;
+
+div.photogallery nav label:hover {
+    border-color: rgb(196, 56, 27);
+}
+
+div.photogallery nav img {
+    width: 100%;
+    height: 6rem;
+    object-fit: cover;
+    display: block;
+}
+
+div.photogallery input {
+    display: none;
 }
 
 @media only screen and (min-width: 60em){
-
-    nav ul li{
-        display: inline;
-        margin-left: 0em;
-    }
-
-    div.home-container{
-        max-width: 80em;
-        padding:0 1em;
-        display:grid;
-        grid-template-columns: 3fr 1fr;
-        grid-gap: 1em;
-    }
-
-    div.container{
-        max-width:60em;
-        padding:0 1em;
-        display:grid;
-        grid-template-columns: 3fr 1fr;
-        grid-gap: 1em;
-    }
-
-    header, footer{
-        grid-column: 1/3;
-    }
-    
-    div.home-container main{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap:1em
-    }
-
-    div.home-container aside{
-        background: none;
-        padding:0;
-        margin-top:0;
-    }
-
-    div.container aside {
-        margin-top: 0;
-    }
-
-    section.main-story{
-        grid-column: 2/4;
-        grid-row: 1/3;
-        display:flex;
-    }
-
-    section.main-story a{
-        flex: 1 0 12em;
-        display:flex;
-        flex-direction: column;   
-
-    }
-
-    section.main-story a figure{
-        flex: 1 0 12em;
-        display:flex;
-
-    }
-
-    section.main-story a figure img{
-        object-fit:cover;
-    }
-
-    section.secondary-story a h2{
-        flex: 0 0 1em;
-    }
-
-    section.main-story a p{
-        flex: 0 0 4em;
-    }
-
-    section.secondary-story{
-        display:flex;
-        
-    }
-
-    section.secondary-story a{
-        flex: 1 0 12em;
-        display:flex;
-        flex-direction: column;   
-    }
-
-    section.secondary-story a figure{
-        flex: 1 0 12em;
-        display:flex;
-    }
-
-    section.secondary-story a figure img{
-        object-fit:cover;
-    }
-
-    section.secondary-story a h2{
-        flex: 0 0 1em;
-    }
-
-    section.secondary-story a p{
-        flex: 0 0 4em;
-
-    }
+nav ul li{
+display: inline;
+margin-left: 0em;
+}
+div.home-container{
+max-width: 80em;
+padding:0 1em;
+display:grid;
+grid-template-columns: 3fr 1fr;
+grid-gap: 1em;
+}
+div.container{
+max-width:60em;
+padding:0 1em;
+display:grid;
+grid-template-columns: 3fr 1fr;
+grid-gap: 1em;
+}
+header, footer{
+grid-column: 1/3;
+}
+div.home-container main{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap:1em
+}
+div.home-container aside{
+background: none;
+padding:0;
+margin-top:0;
+}
+div.container aside {
+margin-top: 0;
+}
+section.main-story{
+grid-column: 2/4;
+grid-row: 1/3;
+display:flex;
+}
+section.main-story a{
+flex: 1 0 12em;
+display:flex;
+flex-direction: column;   
+}
+section.main-story a figure{
+flex: 1 0 12em;
+display:flex;
+}
+section.main-story a figure img{
+object-fit:cover;
+}
+section.secondary-story a h2{
+flex: 0 0 1em;
+}
+section.main-story a p{
+flex: 0 0 4em;
+}
+section.secondary-story{
+display:flex;
+}
+section.secondary-story a{
+flex: 1 0 12em;
+display:flex;
+flex-direction: column;   
+}
+section.secondary-story a figure{
+flex: 1 0 12em;
+display:flex;
+}
+section.secondary-story a figure img{
+object-fit:cover;
+}
+section.secondary-story a h2{
+flex: 0 0 1em;
+}
+section.secondary-story a p{
+flex: 0 0 4em;
+}
 }
 
+@media screen and (prefers-color-scheme: dark) {
+ body {
+        background-color: rgb(31, 31, 30);
+        color: rgb(210, 200, 185);
+    }
+    div.container, div.home-container {
+        background-color: rgb(42, 42, 40);
+    }
+    h2 {
+        color: rgb(212, 160, 24);
+    }
+    .tertiary-story h2 {
+        border-top: 1.5px solid rgb(196, 56, 27);
+    }
+    p {
+        color: rgb(210, 200, 185);
+    }
+    nav ul li a {
+        color: rgb(122, 184, 170);
+    }
+    figcaption {
+        color: rgb(170, 158, 140);
+    }
+    aside {
+        background-color: rgba(75, 124, 112, 0.25);
+    }
+    aside section.secondary-story h2 {
+        color: rgb(212, 160, 24);
+    }
+    section.secondary-story a p {
+        color: rgb(210, 200, 185);
+    }
+    footer {
+        background-color: rgb(31, 31, 30);
+    }
+    main h2 {
+        color: rgb(212, 160, 24);
+    }
+    main form {
+        border-top: 1.5px solid rgb(196, 56, 27);
+    }
+    main h3 {
+        color: rgb(212, 160, 24);
+    }
+    main label {
+        color: rgb(122, 184, 170);
+    }
+    main input[type="text"],
+    main input[type="email"] {
+        border: 1.5px solid rgb(196, 56, 27);
+        background: rgb(42, 42, 40);
+        color: rgb(210, 200, 185);
+    }
+    main input[type="checkbox"] {
+        accent-color: rgb(196, 56, 27);
+    }
+    main button {
+        background: rgb(196, 56, 27);
+        color: rgb(245, 239, 228);
+    }
+    div.photogallery figcaption {
+        color: rgb(170, 158, 140);
+    }
+    div.photogallery nav label:hover {
+        border-color: rgb(212, 160, 24);
+    }
+    h1 {
+        background-image: url("darknaqshsimplelogo.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    h1 img {
+        opacity: 0;
+    }
+}
